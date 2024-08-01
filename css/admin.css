@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Playwrite+CL:wght@100..400&display=swap');
+
+:root {
+	--primary-color: rgb(225, 241, 247)1;
+	--dark-color: black;
+	--secondary-color: rgba(11, 147, 245, 0.953);
+}
+
+.main {
+	max-width: 800px;
+	margin: 0 auto;
+	padding: 20px;
+}
+
+form {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+	margin-bottom: 50px;
+}
+
+form > div {
+	display: flex;
+	flex-direction: column;
+}
+
+form > div > input {
+	padding: 5px;
+	font-size: 18px;
+	border-radius: 10px;
+	border: 1px solid rgb(0, 0, 0);
+}
+
+form > div > label {
+	margin-bottom: 5px;
+}
+
+form > button {
+	padding: 10px;
+	font-size: 18px;
+	background-color: var(--secondary-color);
+	border: none;
+	border-radius: 10px;
+	color: white;
+}
+
+button {
+	cursor: pointer;
+}
+
+table {
+	width: 100%;
+	border-collapse: collapse;
+}
+
+table,
+th,
+td {
+	border: 1px solid black;
+}
+
+th,
+td {
+	padding: 10px;
+}

@@ -1,0 +1,59 @@
+{
+	"info": {
+		"_postman_id": "26ba115a-3bda-4624-afcf-c2ec80aaa3d5",
+		"name": "Library",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "36887214"
+	},
+	"item": [
+		{
+			"name": "get all products",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://668d7a51099db4c579f31799.mockapi.io/books",
+					"protocol": "https",
+					"host": [
+						"668d7a51099db4c579f31799",
+						"mockapi",
+						"io"
+					],
+					"path": [
+						"books"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "post all products",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"World Order\",\n    \"price\": 11,\n    \"imageUrl\": \"https://m.media-amazon.com/images/I/81oHJR7MLkL._AC_UF894,1000_QL80_.jpg\",\n    \"details\": \"World Order by Henry Kissinger is a non-fiction book that examines the history and current state of international diplomacy. Kissinger explores how different regions, including the United States, Europe, China, and the Middle East, have contributed to global stability. He addresses modern challenges such as radical ideologies, shifting power dynamics, and technological advancements. The book advocates for a balanced and cooperative international framework to maintain global order in the 21st century.\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://668d7a51099db4c579f31799.mockapi.io/books",
+					"protocol": "https",
+					"host": [
+						"668d7a51099db4c579f31799",
+						"mockapi",
+						"io"
+					],
+					"path": [
+						"books"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
