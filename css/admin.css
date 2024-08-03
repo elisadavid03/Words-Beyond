@@ -1,9 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Playwrite+CL:wght@100..400&display=swap');
 
 :root {
-	--primary-color: rgb(225, 241, 247)1;
+	--primary-color: white;
 	--dark-color: black;
-	--secondary-color: rgba(11, 147, 245, 0.953);
+	--secondary-color: rgba(38,51,97,1);
 }
 
 .main {
@@ -62,4 +62,20 @@ td {
 th,
 td {
 	padding: 10px;
+}
+
+.logo {
+	display: flex;
+	justify-content: center;
+}
+
+.nav-links {
+	gap: 10px;
+	display: flex;
+	justify-content: center;
+}
+
+a {
+	text-decoration: none;
+	color: rgba(38,51,97,1);
 }

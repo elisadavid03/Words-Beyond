@@ -1,20 +1,28 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Playwrite+CL:wght@100..400&display=swap');
 
 :root {
-	--primary-color: rgb(225, 241, 247);
+	--primary-color: white;
 	--dark-color: black;
-	--secondary-color: rgba(11, 147, 245, 0.953);
+	--secondary-color: rgba(38,51,97,1);
 }
 
 * {
 	margin: 0;
 	padding: 0;
+	box-sizing: border-box;
 }
 
 body {
 	background-color: var(--primary-bg-color);
 	font-optical-sizing: auto;
 	font-style: normal;
+	color: var(--dark-color);
+	line-height: 1.6;
+}
+
+a {
+	color: inherit;
+	text-decoration: none;
 }
 
 .flex {
@@ -52,6 +60,7 @@ body {
 
 .bg-dark {
 	background-color: var(--secondary-color);
+	color: var(--primary-color);
 }
 
 .gap-50 {
@@ -69,7 +78,6 @@ body {
 .navbar a,
 .navbar h3 {
 	color: var(--primary-color);
-	text-decoration: none;
 	font-size: 20px;
 	font-style: italic;
 }
@@ -79,17 +87,21 @@ body {
 	padding-top: 10px;
 }
 
-.logo {
+.logo h3 {
 	font-family: 'Playwrite CU', cursive;
 	font-optical-sizing: auto;
-	font-style: normal;
+	font-size: 28px;
 }
 
 .product-card {
-	background-color: var(--primary-color);
+	background-image: linear-gradient(to top, #dfe9f3 0%, white 100%);
 	width: 200px;
 	text-align: center;
 	padding: 15px 5px;
 	border: 2px solid var(--secondary-color);
 	border-radius: 10px;
+}
+
+.main {
+	background-image: linear-gradient(to top, #dfe9f3 0%, white 100%);
 }
