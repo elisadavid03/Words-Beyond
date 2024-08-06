@@ -7,9 +7,9 @@
 }
 
 .main {
-	max-width: 800px;
-	margin: 0 auto;
-	padding: 20px;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
 }
 
 form {
@@ -78,4 +78,10 @@ td {
 a {
 	text-decoration: none;
 	color: rgba(38,51,97,1);
+}
+
+input {
+	width: 60%;
+	display: flex;
+	justify-content: center;
 }
