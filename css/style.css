@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Playwrite+CL:wght@100..400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Playwrite+CL:wght@100..400&display=swap');
 
 :root {
 	--primary-color: white;
@@ -13,7 +13,6 @@
 }
 
 body {
-	background-color: var(--primary-bg-color);
 	font-optical-sizing: auto;
 	font-style: normal;
 	color: var(--dark-color);
@@ -104,4 +103,13 @@ a {
 
 .main {
 	background-image: linear-gradient(to top, #dfe9f3 0%, white 100%);
+}
+
+.add-to-cart {
+	font-size: 12px;
+	border-radius: 12px;
+	padding: 6px;
+	border: 1px solid black;
+	background-image: linear-gradient(to top, #f3e7e9 0%, #e3eeff 99%, #e3eeff 100%);
+	font-weight: bolder;
 }
