@@ -8,65 +8,89 @@ document.addEventListener('DOMContentLoaded', () => {
 	//Select the containers for cart items and total 
 	const cartItemsContainer = document.querySelector('.cart-items');
 	const cartTotalContainer = document.querySelector('.cart-total');
+	const table = document.querySelector('table');
 
 	//Function to update the cart UI
 	function updateCart() {
 		console.log('Updating cart...');
 		cartItemsContainer.innerHTML = ''; //Clear the container 
 		let total = 0;
+		let cartIsEmpty = true; // Assume cart is empty initially
 
 		//Iterate through the cart items and create UI elements 
 		for (let id in cart) {
 			const product = cart[id];
+			cartIsEmpty = false;
 
-			const productCard = document.createElement('div');
-			productCard.className =
-				'flex justify-between items-center w-300 border-bottom';
-			const descreaseDisabled = product.quantity === 1 ? 'disabled' : ''; //Disable decrease button if quantity is 1 
+			const row = document.createElement('tr');
 
-			//Create the product card HTML
-			productCard.innerHTML = `
-			<img width="20px" src="${product.imageUrl}" />
-				<div class="w-150 h-40 flex gap-20 justify-between items-center">
-            	<span>${product.name}</span>
-            	<div>
-						<button data-id=${id} ${descreaseDisabled} class="decrease">-</button>
-						<span>${product.quantity}</span>
-						<button data-id="${id}" class="increase">+</button>
-            	</div>
-				</div>
-				<span>${product.price * product.quantity} €</span>
-				<button data-id="${id}" class="delete">Sterge</button>
-         `;
+			row.innerHTML = `
+			<td>
+			<img src="${product.imageUrl}" width="60px" />
+			${product.name}
+			</td>
+			 <td>${product.price} €</td>
+			 <td class="quantity">
+			 <button data-id=${id} ${product.quantity === 1 ? 'disabled' : ''} class="decrease">-</button>
+			 <span class="quantity-value">${product.quantity}</span>
+			 <button data-id="${id}" class="increase">+</button>
+			</td>
+			<td>${(product.price * product.quantity)} €</td>
+                <td><button data-id="${id}" class="delete">Remove</button></td>
+			`;
+
+			cartItemsContainer.appendChild(row);
 
 		 //Calculate the total price 
-			total = total + product.price * product.quantity;
-			cartItemsContainer.appendChild(productCard); //Add the product card to the container 
+		 total += product.price * product.quantity;
 		}
 
-		// Update the total container with the total price or empty cart message
-		cartTotalContainer.innerHTML =
-			total === 0 ? 'The cart is empty' : `Total: ${total} €`;
-			console.log('Cart updated, total:', total);
+	if (cartIsEmpty) {
+		table.style.display ='none';
+		cartTotalContainer.innerHTML = 
+		total === 0 ? 'The cart is empty' : `Total: ${total.toFixed(2)} €`;
+		console.log('Cart updated, total:', total);
+	} else {
+		table.style.display = 'table';
+		cartTotalContainer.innerHTML = `Total: ${total.toFixed(2)} €`;
 	}
 
-	// Update the total container with the total price or empty cart message
-	cartItemsContainer.addEventListener('click', (e) => {
-		if (e.target.classList.contains('increase')) {
-			const id = e.target.getAttribute('data-id'); // Get the product ID from the button
-			cart[id].quantity += 1;
-		} else if (e.target.classList.contains('decrease')) {
-			const id = e.target.getAttribute('data-id');
-			cart[id].quantity -= 1;
-		} else if (e.target.classList.contains('delete')) {
-			const id = e.target.getAttribute('data-id');
-			delete cart[id];
-		}
-		// Save the updated cart to localStorage and update the UI
-		localStorage.setItem('cart', JSON.stringify(cart));
-		updateCart();
-	});
+	console.log('Cart updated, total:', total);
+}
 
-	// Initial call to update the cart UI
-	updateCart();
+	cartItemsContainer.addEventListener('click', async (e) => {
+        if (!e.target.classList.contains('increase') && !e.target.classList.contains('decrease') && !e.target.classList.contains('delete')) {
+            return;
+        }
+
+        const id = e.target.getAttribute('data-id');
+        if (e.target.classList.contains('increase')) {
+            const productDetails = await getProductById(id).catch(error => {
+                console.error('Failed to fetch product details:', error);
+                alert('Could not fetch product details. Please try again later.');
+                return null;
+            });
+
+            if (!productDetails || cart[id].quantity >= productDetails.stock) {
+                alert('Cannot add more of this product due to stock limitations.');
+                return;
+            }
+
+            cart[id].quantity += 1;
+        } else if (e.target.classList.contains('decrease')) {
+            if (cart[id].quantity > 1) {
+                cart[id].quantity -= 1;
+            } else {
+                alert('Minimum quantity reached.');
+                return;
+            }
+        } else if (e.target.classList.contains('delete')) {
+            delete cart[id];
+        }
+
+        localStorage.setItem('cart', JSON.stringify(cart));
+        updateCart();
+    });
+
+    updateCart();
 });
