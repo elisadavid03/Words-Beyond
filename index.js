@@ -1,57 +1,48 @@
-import { getAllProducts } from './api/products.js';
-import { mapProductToCard } from './utils/layout.js';
+import { getAllProducts } from '../api/products.js';
+import { mapProductToCard } from '../utils/layout.js';
+import { getCart, saveCart, } from '../utils/storage.js'; 
 
-//Ensure the DOM is fully loaded before running the script 
 document.addEventListener('DOMContentLoaded', () => {
     displayAllProducts();
 });
 
-//Async function to fetch and display products
 async function displayAllProducts() {
     const mainContainer = document.querySelector('.main');
     const products = await getAllProducts();
-
-    //Render products
     mainContainer.innerHTML = products.map(mapProductToCard).join(' ');
-
-    // Add event listeners to the buttons after the products are displayed
-    addEventListenersToButtons();
+    addEventListenersToButtons(products);
 }
 
-//Function to add event listeners to the "Add to cart" button
-function addEventListenersToButtons() {
-    const addToCartButtons = document.querySelectorAll('.add-to-cart');
-    console.log('Add to cart buttons:', addToCartButtons); // Log buttons for debugging 
-    
-    //Attach click event listener to each "Add to cart" button 
-    addToCartButtons.forEach((button) => {
-        button.addEventListener('click', () => {
-            console.log('Button clicked:', button); // Log button click for debugging
-
-            //Retrieve product information from data attributes
+function addEventListenersToButtons(products) {
+    document.querySelectorAll('.add-to-cart').forEach(button => {
+        button.addEventListener('click', async () => {  // Make the function async to handle product fetching
             const productId = button.getAttribute('data-id');
-            const price = button.getAttribute('data-price');
-            const name = button.getAttribute('data-name');
-            const imageUrl = button.getAttribute('data-image');
+            const product = products.find(p => p.id === productId);
 
-            //Get the current cart from localStorage or initialize it 
-            let cart = JSON.parse(localStorage.getItem('cart')) || {};
+            // Get the current cart from localStorage or initialize it
+            let cart = getCart();  // Utilize getCart from storage.js
 
-            //Update the cart: increment quantity if product exists, otherwise add new product
+            if (cart[productId] && cart[productId].quantity >= product.stock) {
+                alert('Not enough stock available.');
+                return;  // Prevent adding beyond available stock
+            }
+
+            // Update the cart: increment quantity if product exists, otherwise add new product
             if (cart[productId]) {
                 cart[productId].quantity += 1;
             } else {
                 cart[productId] = {
                     quantity: 1,
-                    price: price,
-                    name: name,
-                    imageUrl: imageUrl,
+                    price: product.price,
+                    name: product.name,
+                    imageUrl: product.imageUrl,
                 };
             }
 
-            //Save the updated cart back to localStorage
-            localStorage.setItem('cart', JSON.stringify(cart));
-            console.log('Product added to cart:', cart); //Log the updated cart for debugging
+            // Save the updated cart back to localStorage
+            saveCart(cart);  // Utilize saveCart from storage.js
+            console.log('Product added to cart:', cart); // Log the updated cart for debugging
         });
     });
 }
+
