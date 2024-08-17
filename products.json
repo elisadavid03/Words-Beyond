@@ -1,142 +1,162 @@
 [
-    {
-      "name": "World Without End",
-      "imageUrl": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1509545511i/5064.jpg",
-      "price": 17,
-      "details": "World Without End by Ken Follett is a historical novel set in the fictional town of Kingsbridge, England, during the 14th century. It follows the lives of four main characters: Caris, a resourceful and intelligent woman who aspires to become a physician; Merthin, a talented and ambitious builder; Ralph, Merthin's ruthless and power-hungry brother; and Gwenda, a determined peasant girl. The story spans several decades, depicting their struggles, ambitions, and relationships against the backdrop of the Black Death, political intrigue, and social upheaval. As they navigate the challenges of their time, their fates intertwine in a rich tapestry of love, loss, and survival.",
-      "id": "1"
-    },
-    {
-      "name": "Where the Crawdads Sing",
-      "imageUrl": "https://upload.wikimedia.org/wikipedia/en/2/23/Where_the_Crawdads_Sing_%28film%29.jpg",
-      "price": 16,
-      "details": "Where the Crawdads Sing by Delia Owens is a captivating novel set in the marshes of North Carolina. It tells the story of Kya Clark, known as the Marsh Girl who grows up isolated and abandoned in the wild. As she matures, she becomes an expert on the natural world around her, but remains shunned by the local community. The novel intertwines two timelines: Kya's lonely childhood and her development into a self-reliant young woman, and a murder investigation in 1969, where she becomes the prime suspect in the death of Chase Andrews, a local man. The story explores themes of loneliness, survival, and the powerful connections between humans and nature. As the mystery unfolds, secrets about Kya's life and the people around her are revealed, leading to a poignant and surprising conclusion.",
-      "id": "2"
-    },
-    {
-      "name": "The Evening and The Morning",
-      "imageUrl": "https://m.media-amazon.com/images/I/91Ypfu72JxL._AC_UF1000,1000_QL80_.jpg",
-      "price": 21,
-      "details": "The Evening and the Morning by Ken Follett is a prequel to The Pillars of the Earth, set in late 10th and early 11th century England. It follows three main characters: Edgar, a boatbuilder whose life is disrupted by a Viking raid; Ragna, a Norman noblewoman navigating the challenges of her new marriage in England; and Aldred, an ambitious monk dreaming of creating a center of learning. Their lives intertwine as they face enemies, political intrigue, and personal trials, all while striving to bring justice and progress to their turbulent world.",
-      "id": "3"
-    },
-    {
-      "name": "1984",
-      "imageUrl": "https://m.media-amazon.com/images/I/71rpa1-kyvL._AC_UF1000,1000_QL80_.jpg",
-      "price": 14,
-      "details": "1984 by George Orwell is a dystopian novel set in a totalitarian society ruled by the Party, led by the omnipresent Big Brother. The story follows Winston Smith, a low-ranking member of the Party, who secretly despises the regime and yearns for rebellion. In this oppressive world, individuality and independent thought are persecuted, and the Party manipulates reality through propaganda, surveillance, and censorship. Winston begins an illicit love affair with Julia and becomes involved with the resistance, leading to dangerous consequences. The novel explores themes of totalitarianism, surveillance, and the abuse of power, painting a bleak picture of a society where freedom and truth are obliterated.",
-      "id": "4"
-    },
-    {
-      "name": "The Armour of Light",
-      "imageUrl": "https://m.media-amazon.com/images/I/913q9EMvXPL._AC_UF1000,1000_QL80_.jpg",
-      "price": 28,
-      "details": "The Spinning Jenny was invented in 1770, and with that, a new era of manufacturing and industry changed lives everywhere within a generation. A world filled with unrest wrestles for control over this new world order: A mother's husband is killed in a work accident due to negligence; a young woman fights to fund her school for impoverished children; a well-intentioned young man unexpectedly inherits a failing business; one man ruthlessly protects his wealth no matter the cost, all the while war cries are heard from France, as Napoleon sets forth a violent master plan to become emperor of the world. As institutions are challenged and toppled in unprecedented fashion, ripples of change ricochet through our characters' lives as they are left to reckon with the future and a world they must rebuild from the ashes of war.",
-      "id": "5"
-    },
-    {
-      "name": "The Alchemist",
-      "imageUrl": "https://m.media-amazon.com/images/I/71h2Cp+305L._AC_UF1000,1000_QL80_.jpg",
-      "price": 15,
-      "details": "The Alchemist by Paulo Coelho is a philosophical novel that follows the journey of Santiago, a young Andalusian shepherd. Dreaming of finding a hidden treasure located near the pyramids in Egypt, Santiago embarks on a quest that takes him from his homeland in Spain across the Mediterranean to the deserts of North Africa. Along the way, he encounters various characters, including a gypsy fortune-teller, a crystal merchant, an Englishman searching for the secrets of alchemy, and the titular alchemist, who teaches Santiago about the importance of pursuing his personal legend. The novel explores themes of destiny, dreams, and the interconnectedness of all things, encouraging readers to follow their own paths and seek out their true purpose in life.",
-      "id": "6"
-    },
-    {
-      "name": "The Looming Tower",
-      "imageUrl": "https://m.media-amazon.com/images/I/81tkP79UD+L._AC_UF1000,1000_QL80_.jpg",
-      "price": 19,
-      "details": "The Looming Tower: Al-Qaeda and the Road to 9/11 by Lawrence Wright is a non-fiction book that chronicles the rise of Al-Qaeda and the events leading up to the September 11, 2001 terrorist attacks. It explores the history and ideology of Islamist terrorism, focusing on key figures like Osama bin Laden and Ayman al-Zawahiri. The book also examines the intelligence failures and interagency conflicts between the FBI and CIA that contributed to the inability to prevent the attacks. Wright's work is known for its thorough research and compelling narrative, providing a comprehensive look at the factors leading to 9/11.",
-      "id": "7"
-    },
-    {
-      "name": "The Giver",
-      "imageUrl": "https://m.media-amazon.com/images/I/81cJChEQjSL._AC_UF1000,1000_QL80_.jpg",
-      "price": 10,
-      "details": "The Giver by Lois Lowry is a dystopian novel about Jonas, a twelve-year-old boy chosen to be the Receiver of Memories in a controlled, seemingly perfect society. As Jonas learns from The Giver, who holds the community's hidden memories, he discovers the depth of emotions and experiences, such as pain and love, that are suppressed in his world. Realizing the dark truths behind his society's facade of sameness, Jonas decides to escape in search of a life of freedom and individuality. The novel explores themes of conformity, control, and the value of memory and emotion.",
-      "id": "8"
-    },
-    {
-      "name": "A Thousand Splendid Suns",
-      "imageUrl": "https://m.media-amazon.com/images/I/81xIPfJ6iUL._AC_UF1000,1000_QL80_.jpg",
-      "price": 16,
-      "details": "A Thousand Splendid Suns by Khaled Hosseini is a novel set in Afghanistan, following the intertwined lives of two women, Mariam and Laila. Mariam, born out of wedlock, faces a harsh life and an oppressive marriage to Rasheed. Laila, who joins Rasheed's household as his second wife after her family is killed, initially clashes with Mariam. Over time, the two women form a deep bond, enduring the brutality of their husband and the challenges of living in a war-torn society. The novel highlights themes of resilience, friendship, and the struggles of women in Afghan culture.",
-      "id": "9"
-    },
-    {
-      "name": "Animal Farm",
-      "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSOz9gocjkM_pfgRKnOsKgNRCtIHTEq4M21Wg&s",
-      "price": 8,
-      "details": "Animal Farm by George Orwell is a satirical novella about a group of farm animals who overthrow their human owner to create an egalitarian society. Led by the pigs Napoleon and Snowball, the animals initially seek equality but soon face corruption and tyranny as the pigs seize power. The story mirrors the Russian Revolution and the rise of the Soviet Union, exploring themes of power, corruption, and betrayal. The famous line 'All animals are equal, but some animals are more equal than others' highlights the hypocrisy of the ruling pigs.",
-      "id": "10"
-    },
-    {
-      "name": "Zeno's Conscience",
-      "imageUrl": "https://m.media-amazon.com/images/I/713PSHr6gwL._AC_UF1000,1000_QL80_.jpg",
-      "price": 17,
-      "details": "Zeno's Conscience by Italo Svevo is a modernist novel about Zeno Cosini, a middle-aged businessman in Trieste. Written as part of his psychoanalytic treatment, Zeno's memoirs explore his troubled relationships, his struggle to quit smoking, and his inner thoughts. Using a stream-of-consciousness technique, the novel delves into themes of identity, self-deception, and the complexities of human psychology. It is known for its introspective depth and critique of early 20th-century bourgeois society.",
-      "id": "11"
-    },
-    {
-      "name": "Never",
-      "imageUrl": "https://m.media-amazon.com/images/I/810z0hoLyxS._AC_UF1000,1000_QL80_.jpg",
-      "price": 22,
-      "details": "Never by Ken Follett is a contemporary thriller that delves into the escalating tensions leading up to a potential global conflict. The novel follows a diverse cast of characters across the world, including a young intelligence officer in the Sahara, a high-ranking Chinese official, an American president, and a North Korean spy. As these characters navigate political intrigue, espionage, and personal challenges, their actions and decisions intertwine, pushing the world closer to the brink of an unthinkable war. Follett's gripping narrative explores themes of power, diplomacy, and the precarious nature of global peace.",
-      "id": "12"
-    },
-    {
-      "name": "On Wings of Eagles",
-      "imageUrl": "https://m.media-amazon.com/images/I/81mtBKC4OXL._AC_UF1000,1000_QL80_.jpg",
-      "price": 19,
-      "details": "On Wings of Eagles by Ken Follett is a non-fiction book about a daring rescue mission during the Iranian Revolution. American business tycoon Ross Perot learns that two of his employees are imprisoned in Tehran. He assembles a team of volunteers, including retired military personnel, to plan and execute their rescue. The book details the political situation in Iran and the team's perilous journey, highlighting themes of loyalty, bravery, and resourcefulness.",
-      "id": "13"
-    },
-    {
-      "name": "World Order",
-      "imageUrl": "https://m.media-amazon.com/images/I/81oHJR7MLkL._AC_UF894,1000_QL80_.jpg",
-      "price": 11,
-      "details": "World Order by Henry Kissinger is a non-fiction book that examines the history and current state of international diplomacy. Kissinger explores how different regions, including the United States, Europe, China, and the Middle East, have contributed to global stability. He addresses modern challenges such as radical ideologies, shifting power dynamics, and technological advancements. The book advocates for a balanced and cooperative international framework to maintain global order in the 21st century.",
-      "id": "14"
-    },
-    {
-      "name": "Mansfield Park",
-      "imageUrl": "https://www.ibs.it/images/9788807903526_0_536_0_75.jpg",
-      "price": 7,
-      "details": "Mansfield Park by Jane Austen follows Fanny Price, a poor girl sent to live with her wealthy relatives. Treated as inferior, Fanny grows up kind and moral. She bonds with her cousin Edmund, who is drawn to the manipulative Mary Crawford. Henry Crawford, Mary's brother, tries to court Fanny but fails due to his dubious character. The novel contrasts Fanny's virtue with the moral flaws of others, critiquing upper-class superficiality. Eventually, Fanny's worth is recognized, and she earns respect within the family. Themes include social class, morality, and the importance of inner virtue.",
-      "id": "15"
-    },
-    {
-      "name": "Shōgun",
-      "imageUrl": "https://m.media-amazon.com/images/I/91LIU1FM-nL._AC_UF1000,1000_QL80_.jpg",
-      "price": 25,
-      "details": "Shōgun by James Clavell is a historical novel set in early 17th-century Japan. It follows John Blackthorne, an English navigator shipwrecked in Japan, who is taken under the protection of a powerful samurai lord, Toranaga. As Blackthorne learns Japanese customs and language, he navigates complex feudal politics and forms a deep bond with Mariko, a Christian convert. The novel explores themes of cultural clash, honor, and adaptation, providing a vivid portrayal of feudal Japanese society.",
-      "id": "16"
-    },
-    {
-      "name": "I Must Betray You",
-      "imageUrl": "https://m.media-amazon.com/images/I/81Mqxn2fIEL._AC_UF1000,1000_QL80_.jpg",
-      "price": 12,
-      "details": "I Must Betray You by Ruta Sepetys is set in 1989 Romania under Nicolae Ceaușescu's oppressive regime. The story follows 17-year-old Cristian Florescu, who is blackmailed by the secret police to become an informant. Struggling with the moral dilemma of betraying his loved ones, Cristian becomes involved in the underground resistance. The novel explores themes of loyalty, courage, and the quest for freedom, providing a powerful glimpse into life under dictatorship and the resilience of those fighting for a better future.",
-      "id": "17"
-    },
-    {
-      "name": "All the Light We Cannot See",
-      "imageUrl": "https://m.media-amazon.com/images/I/81nWPkdM+GL._AC_UF1000,1000_QL80_.jpg",
-      "price": 22,
-      "details": "All the Light We Cannot See by Anthony Doerr is a historical novel set during World War II. It follows two main characters: Marie-Laure, a blind French girl, and Werner, a German orphan. Marie-Laure flees Paris with her father, who is entrusted with a valuable jewel, to the walled citadel of Saint-Malo. Werner, a gifted radio technician, is recruited by the Nazi military. Their lives eventually intersect in Saint-Malo as the war reaches its climax. The novel explores themes of survival, resilience, and the impact of war on individuals, beautifully illustrating the unseen connections between people.",
-      "id": "18"
-    },
-    {
-      "name": "Code To Zero",
-      "imageUrl": "https://m.media-amazon.com/images/I/91JXeRqEJ+L._AC_UF1000,1000_QL80_.jpg",
-      "price": 16,
-      "details": "Code to Zero by Ken Follett is a thrilling novel set in 1958 during the early space race. The story follows Luke Lucas, a scientist who wakes up in Washington D.C. with no memory of his identity. As he pieces together his past, he discovers he was involved in a top-secret American space project and has been brainwashed. Luke must uncover who erased his memory and why, leading him through Cold War espionage and scientific rivalry. He races against time to thwart a Soviet plot to sabotage the American space program, facing personal betrayals and rediscovering his true self.",
-      "id": "19"
-    },
-    {
-      "name": "Lie Down with Lions",
-      "imageUrl": "https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcQLc619YDbH-8mee0TmddmuR-XLu984R6W-yN0uSB0YtiBj-2g6kHqgIXTO5w",
-      "price": 12,
-      "details": "Lie Down with Lions by Ken Follett is a historical thriller set during the Soviet-Afghan War in the early 1980s. The novel follows three central characters: Jean-Pierre Debout, a French doctor working for a humanitarian organization in Afghanistan who secretly spies for the KGB; Jane Lambert, a British aid worker involved with Jean-Pierre but unaware of his double life; and Ellis Thaler, an American CIA operative who is Jane's former lover. As their paths intersect in the war-torn Afghan landscape, they are caught in a dangerous web of espionage, love, and betrayal. The story delves into the harsh realities of the conflict, the complexities of human relationships, and the high stakes of international intrigue.",
-      "id": "20"
-    }
-  ]
+  {
+    "name": "World Without End",
+    "imageUrl": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1509545511i/5064.jpg",
+    "price": 17,
+    "details": "World Without End by Ken Follett is a historical novel set in the fictional town of Kingsbridge, England, during the 14th century. It follows the lives of four main characters: Caris, a resourceful and intelligent woman who aspires to become a physician; Merthin, a talented and ambitious builder; Ralph, Merthin's ruthless and power-hungry brother; and Gwenda, a determined peasant girl. The story spans several decades, depicting their struggles, ambitions, and relationships against the backdrop of the Black Death, political intrigue, and social upheaval. As they navigate the challenges of their time, their fates intertwine in a rich tapestry of love, loss, and survival.",
+    "stock": 23,
+    "id": "1"
+  },
+  {
+    "name": "Where the Crawdads Sing",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/en/2/23/Where_the_Crawdads_Sing_%28film%29.jpg",
+    "price": 16,
+    "details": "Where the Crawdads Sing by Delia Owens is a captivating novel set in the marshes of North Carolina. It tells the story of Kya Clark, known as the Marsh Girl who grows up isolated and abandoned in the wild. As she matures, she becomes an expert on the natural world around her, but remains shunned by the local community. The novel intertwines two timelines: Kya's lonely childhood and her development into a self-reliant young woman, and a murder investigation in 1969, where she becomes the prime suspect in the death of Chase Andrews, a local man. The story explores themes of loneliness, survival, and the powerful connections between humans and nature. As the mystery unfolds, secrets about Kya's life and the people around her are revealed, leading to a poignant and surprising conclusion.",
+    "stock": 25,
+    "id": "2"
+  },
+  {
+    "name": "The Evening and The Morning",
+    "imageUrl": "https://m.media-amazon.com/images/I/91Ypfu72JxL._AC_UF1000,1000_QL80_.jpg",
+    "price": 21,
+    "details": "The Evening and the Morning by Ken Follett is a prequel to The Pillars of the Earth, set in late 10th and early 11th century England. It follows three main characters: Edgar, a boatbuilder whose life is disrupted by a Viking raid; Ragna, a Norman noblewoman navigating the challenges of her new marriage in England; and Aldred, an ambitious monk dreaming of creating a center of learning. Their lives intertwine as they face enemies, political intrigue, and personal trials, all while striving to bring justice and progress to their turbulent world.",
+    "stock": 32,
+    "id": "3"
+  },
+  {
+    "name": "1984",
+    "imageUrl": "https://m.media-amazon.com/images/I/71rpa1-kyvL._AC_UF1000,1000_QL80_.jpg",
+    "price": 14,
+    "details": "1984 by George Orwell is a dystopian novel set in a totalitarian society ruled by the Party, led by the omnipresent Big Brother. The story follows Winston Smith, a low-ranking member of the Party, who secretly despises the regime and yearns for rebellion. In this oppressive world, individuality and independent thought are persecuted, and the Party manipulates reality through propaganda, surveillance, and censorship. Winston begins an illicit love affair with Julia and becomes involved with the resistance, leading to dangerous consequences. The novel explores themes of totalitarianism, surveillance, and the abuse of power, painting a bleak picture of a society where freedom and truth are obliterated.",
+    "stock": 35,
+    "id": "4"
+  },
+  {
+    "name": "The Armour of Light",
+    "imageUrl": "https://m.media-amazon.com/images/I/913q9EMvXPL._AC_UF1000,1000_QL80_.jpg",
+    "price": 28,
+    "details": "The Spinning Jenny was invented in 1770, and with that, a new era of manufacturing and industry changed lives everywhere within a generation. A world filled with unrest wrestles for control over this new world order: A mother's husband is killed in a work accident due to negligence; a young woman fights to fund her school for impoverished children; a well-intentioned young man unexpectedly inherits a failing business; one man ruthlessly protects his wealth no matter the cost, all the while war cries are heard from France, as Napoleon sets forth a violent master plan to become emperor of the world. As institutions are challenged and toppled in unprecedented fashion, ripples of change ricochet through our characters' lives as they are left to reckon with the future and a world they must rebuild from the ashes of war.",
+    "stock": 37,
+    "id": "5"
+  },
+  {
+    "name": "The Alchemist",
+    "imageUrl": "https://m.media-amazon.com/images/I/71h2Cp+305L._AC_UF1000,1000_QL80_.jpg",
+    "price": 15,
+    "details": "The Alchemist by Paulo Coelho is a philosophical novel that follows the journey of Santiago, a young Andalusian shepherd. Dreaming of finding a hidden treasure located near the pyramids in Egypt, Santiago embarks on a quest that takes him from his homeland in Spain across the Mediterranean to the deserts of North Africa. Along the way, he encounters various characters, including a gypsy fortune-teller, a crystal merchant, an Englishman searching for the secrets of alchemy, and the titular alchemist, who teaches Santiago about the importance of pursuing his personal legend. The novel explores themes of destiny, dreams, and the interconnectedness of all things, encouraging readers to follow their own paths and seek out their true purpose in life.",
+    "stock": 25,
+    "id": "6"
+  },
+  {
+    "name": "The Looming Tower",
+    "imageUrl": "https://m.media-amazon.com/images/I/81tkP79UD+L._AC_UF1000,1000_QL80_.jpg",
+    "price": 19,
+    "details": "The Looming Tower: Al-Qaeda and the Road to 9/11 by Lawrence Wright is a non-fiction book that chronicles the rise of Al-Qaeda and the events leading up to the September 11, 2001 terrorist attacks. It explores the history and ideology of Islamist terrorism, focusing on key figures like Osama bin Laden and Ayman al-Zawahiri. The book also examines the intelligence failures and interagency conflicts between the FBI and CIA that contributed to the inability to prevent the attacks. Wright's work is known for its thorough research and compelling narrative, providing a comprehensive look at the factors leading to 9/11.",
+    "stock": 34,
+    "id": "7"
+  },
+  {
+    "name": "The Giver",
+    "imageUrl": "https://m.media-amazon.com/images/I/81cJChEQjSL._AC_UF1000,1000_QL80_.jpg",
+    "price": 10,
+    "details": "The Giver by Lois Lowry is a dystopian novel about Jonas, a twelve-year-old boy chosen to be the Receiver of Memories in a controlled, seemingly perfect society. As Jonas learns from The Giver, who holds the community's hidden memories, he discovers the depth of emotions and experiences, such as pain and love, that are suppressed in his world. Realizing the dark truths behind his society's facade of sameness, Jonas decides to escape in search of a life of freedom and individuality. The novel explores themes of conformity, control, and the value of memory and emotion.",
+    "stock": 16,
+    "id": "8"
+  },
+  {
+    "name": "A Thousand Splendid Suns",
+    "imageUrl": "https://m.media-amazon.com/images/I/81xIPfJ6iUL._AC_UF1000,1000_QL80_.jpg",
+    "price": 16,
+    "details": "A Thousand Splendid Suns by Khaled Hosseini is a novel set in Afghanistan, following the intertwined lives of two women, Mariam and Laila. Mariam, born out of wedlock, faces a harsh life and an oppressive marriage to Rasheed. Laila, who joins Rasheed's household as his second wife after her family is killed, initially clashes with Mariam. Over time, the two women form a deep bond, enduring the brutality of their husband and the challenges of living in a war-torn society. The novel highlights themes of resilience, friendship, and the struggles of women in Afghan culture.",
+    "stock": 29,
+    "id": "9"
+  },
+  {
+    "name": "Animal Farm",
+    "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSOz9gocjkM_pfgRKnOsKgNRCtIHTEq4M21Wg&s",
+    "price": 8,
+    "details": "Animal Farm by George Orwell is a satirical novella about a group of farm animals who overthrow their human owner to create an egalitarian society. Led by the pigs Napoleon and Snowball, the animals initially seek equality but soon face corruption and tyranny as the pigs seize power. The story mirrors the Russian Revolution and the rise of the Soviet Union, exploring themes of power, corruption, and betrayal. The famous line 'All animals are equal, but some animals are more equal than others' highlights the hypocrisy of the ruling pigs.",
+    "stock": 45,
+    "id": "10"
+  },
+  {
+    "name": "Zeno's Conscience",
+    "imageUrl": "https://m.media-amazon.com/images/I/713PSHr6gwL._AC_UF1000,1000_QL80_.jpg",
+    "price": 17,
+    "details": "Zeno's Conscience by Italo Svevo is a modernist novel about Zeno Cosini, a middle-aged businessman in Trieste. Written as part of his psychoanalytic treatment, Zeno's memoirs explore his troubled relationships, his struggle to quit smoking, and his inner thoughts. Using a stream-of-consciousness technique, the novel delves into themes of identity, self-deception, and the complexities of human psychology. It is known for its introspective depth and critique of early 20th-century bourgeois society.",
+    "stock": 10,
+    "id": "11"
+  },
+  {
+    "name": "Never",
+    "imageUrl": "https://m.media-amazon.com/images/I/810z0hoLyxS._AC_UF1000,1000_QL80_.jpg",
+    "price": 22,
+    "details": "Never by Ken Follett is a contemporary thriller that delves into the escalating tensions leading up to a potential global conflict. The novel follows a diverse cast of characters across the world, including a young intelligence officer in the Sahara, a high-ranking Chinese official, an American president, and a North Korean spy. As these characters navigate political intrigue, espionage, and personal challenges, their actions and decisions intertwine, pushing the world closer to the brink of an unthinkable war. Follett's gripping narrative explores themes of power, diplomacy, and the precarious nature of global peace.",
+    "stock": 17,
+    "id": "12"
+  },
+  {
+    "name": "On Wings of Eagles",
+    "imageUrl": "https://m.media-amazon.com/images/I/81mtBKC4OXL._AC_UF1000,1000_QL80_.jpg",
+    "price": 19,
+    "details": "On Wings of Eagles by Ken Follett is a non-fiction book about a daring rescue mission during the Iranian Revolution. American business tycoon Ross Perot learns that two of his employees are imprisoned in Tehran. He assembles a team of volunteers, including retired military personnel, to plan and execute their rescue. The book details the political situation in Iran and the team's perilous journey, highlighting themes of loyalty, bravery, and resourcefulness.",
+    "stock": 18,
+    "id": "13"
+  },
+  {
+    "name": "World Order",
+    "imageUrl": "https://m.media-amazon.com/images/I/81oHJR7MLkL._AC_UF894,1000_QL80_.jpg",
+    "price": 11,
+    "details": "World Order by Henry Kissinger is a non-fiction book that examines the history and current state of international diplomacy. Kissinger explores how different regions, including the United States, Europe, China, and the Middle East, have contributed to global stability. He addresses modern challenges such as radical ideologies, shifting power dynamics, and technological advancements. The book advocates for a balanced and cooperative international framework to maintain global order in the 21st century.",
+    "stock": 36,
+    "id": "14"
+  },
+  {
+    "name": "Mansfield Park",
+    "imageUrl": "https://www.ibs.it/images/9788807903526_0_536_0_75.jpg",
+    "price": 7,
+    "details": "Mansfield Park by Jane Austen follows Fanny Price, a poor girl sent to live with her wealthy relatives. Treated as inferior, Fanny grows up kind and moral. She bonds with her cousin Edmund, who is drawn to the manipulative Mary Crawford. Henry Crawford, Mary's brother, tries to court Fanny but fails due to his dubious character. The novel contrasts Fanny's virtue with the moral flaws of others, critiquing upper-class superficiality. Eventually, Fanny's worth is recognized, and she earns respect within the family. Themes include social class, morality, and the importance of inner virtue.",
+    "stock": 24,
+    "id": "15"
+  },
+  {
+    "name": "Shōgun",
+    "imageUrl": "https://m.media-amazon.com/images/I/91LIU1FM-nL._AC_UF1000,1000_QL80_.jpg",
+    "price": 25,
+    "details": "Shōgun by James Clavell is a historical novel set in early 17th-century Japan. It follows John Blackthorne, an English navigator shipwrecked in Japan, who is taken under the protection of a powerful samurai lord, Toranaga. As Blackthorne learns Japanese customs and language, he navigates complex feudal politics and forms a deep bond with Mariko, a Christian convert. The novel explores themes of cultural clash, honor, and adaptation, providing a vivid portrayal of feudal Japanese society.",
+    "stock": 13,
+    "id": "16"
+  },
+  {
+    "name": "I Must Betray You",
+    "imageUrl": "https://m.media-amazon.com/images/I/81Mqxn2fIEL._AC_UF1000,1000_QL80_.jpg",
+    "price": 12,
+    "details": "I Must Betray You by Ruta Sepetys is set in 1989 Romania under Nicolae Ceaușescu's oppressive regime. The story follows 17-year-old Cristian Florescu, who is blackmailed by the secret police to become an informant. Struggling with the moral dilemma of betraying his loved ones, Cristian becomes involved in the underground resistance. The novel explores themes of loyalty, courage, and the quest for freedom, providing a powerful glimpse into life under dictatorship and the resilience of those fighting for a better future.",
+    "stock": 8,
+    "id": "17"
+  },
+  {
+    "name": "All the Light We Cannot See",
+    "imageUrl": "https://m.media-amazon.com/images/I/81nWPkdM+GL._AC_UF1000,1000_QL80_.jpg",
+    "price": 22,
+    "details": "All the Light We Cannot See by Anthony Doerr is a historical novel set during World War II. It follows two main characters: Marie-Laure, a blind French girl, and Werner, a German orphan. Marie-Laure flees Paris with her father, who is entrusted with a valuable jewel, to the walled citadel of Saint-Malo. Werner, a gifted radio technician, is recruited by the Nazi military. Their lives eventually intersect in Saint-Malo as the war reaches its climax. The novel explores themes of survival, resilience, and the impact of war on individuals, beautifully illustrating the unseen connections between people.",
+    "stock": 46,
+    "id": "18"
+  },
+  {
+    "name": "Code To Zero",
+    "imageUrl": "https://m.media-amazon.com/images/I/91JXeRqEJ+L._AC_UF1000,1000_QL80_.jpg",
+    "price": 16,
+    "details": "Code to Zero by Ken Follett is a thrilling novel set in 1958 during the early space race. The story follows Luke Lucas, a scientist who wakes up in Washington D.C. with no memory of his identity. As he pieces together his past, he discovers he was involved in a top-secret American space project and has been brainwashed. Luke must uncover who erased his memory and why, leading him through Cold War espionage and scientific rivalry. He races against time to thwart a Soviet plot to sabotage the American space program, facing personal betrayals and rediscovering his true self.",
+    "stock": 15,
+    "id": "19"
+  },
+  {
+    "name": "Lie Down with Lions",
+    "imageUrl": "https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcQLc619YDbH-8mee0TmddmuR-XLu984R6W-yN0uSB0YtiBj-2g6kHqgIXTO5w",
+    "price": 12,
+    "details": "Lie Down with Lions by Ken Follett is a historical thriller set during the Soviet-Afghan War in the early 1980s. The novel follows three central characters: Jean-Pierre Debout, a French doctor working for a humanitarian organization in Afghanistan who secretly spies for the KGB; Jane Lambert, a British aid worker involved with Jean-Pierre but unaware of his double life; and Ellis Thaler, an American CIA operative who is Jane's former lover. As their paths intersect in the war-torn Afghan landscape, they are caught in a dangerous web of espionage, love, and betrayal. The story delves into the harsh realities of the conflict, the complexities of human relationships, and the high stakes of international intrigue.",
+    "stock": 20,
+    "id": "20"
+  }
+]
