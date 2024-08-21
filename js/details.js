@@ -12,21 +12,34 @@ document.addEventListener('DOMContentLoaded', () => {
 async function showProductDetails(productId) {
     try {
         const product = await getProductById(productId);
+        
         document.querySelector('.main').innerHTML = `
-            <h2>${product.name}</h2>
-            <img src="${product.imageUrl}" width="250px" />
-            <h4>${product.details}</h4>
-            <p class="card-price">${product.price} €</p>
-            <h5>Stock: ${product.stock}</h5>
-            <div>
+        <div class="product-container">
+           <div class="product-images">
+              <img src="${product.imageUrl}" width="250px" alt="Product Image" class="main-image" />
+        </div>
+        <div class="product-content">
+        <div class="details"> 
+             <h2>${product.name}</h2>
+             <h3>${product.details}</h3>
+        </div>
+        <div class="product-details">
+            <p class="card-price">${product.price.toFixed(2)} €</p>
+            <h5>Available Stock: ${product.stock} pcs. </h5>
+            <div class="quantity-section">
+            <label for ="quantity"> Quantity: </label>
+            <input type="number" id="quantity" name="quantity" value="1" min="1" max="${product.stock}" class="quantity-input">
+            </div>
                 <button class="add-to-cart"
                        data-id="${product.id}"
                        data-name="${product.name}"
                        data-price="${product.price}"
                        data-image="${product.imageUrl}"
                        data-stock="${product.stock}">Add to cart</button>
-            </div>
-            <div class="notification" style="display:none;">${product.name} has been added to your cart.</div>
+                <div class="notification" style="display:none;">${product.name} has been added to your cart.</div>
+             </div>
+        </div>
+    </div>
         `;
     } catch (error) {
         console.error('Error fetching product details:', error);
@@ -45,17 +58,26 @@ function handleAddToCart() {
                 stock: parseInt(button.getAttribute('data-stock')),
             };
 
-            const result = addToCart(product, 1);  // Add one item to cart
+            const quantityInput = document.getElementById('quantity');
+            const quantity = parseInt(quantityInput.value); 
+
+            if (quantity > product.stock) {
+                alert('Not enough stock available.'); 
+                return;
+            }
+
+            const result = addToCart(product, quantity);  // Add the specified quantity to cart
+
             if (result === "outOfStock") {
                 alert('Not enough stock available.');
             } else {
                 // Show notification
                 const notification = document.querySelector('.notification');
-                notification.innerText = `${product.name} has been added to your cart.`;
+                notification.innerText = `${quantity} x ${product.name} has been added to your cart.`;
                 notification.style.display = 'block';
                 setTimeout(() => {
                     notification.style.display = 'none';
-                }, 3000); // Hide after 3 seconds
+                }, 3000); 
             }
         }
     });
