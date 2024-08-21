@@ -1,6 +1,308 @@
 :root {
-	--primary-color: white;
+	--primary-color: #2B2F52;
 	--dark-color: black;
-	--secondary-color: rgba(38,51,97,1);
+	--secondary-color: #C3777C;
 }
 
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-optical-sizing: auto;
+	font-style: normal;
+	color: var(--dark-color);
+	line-height: 1.6;
+}
+
+/* Navbar */
+
+.navbar {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background: var(--primary-color);
+	padding: 10px 50px;
+	color: white;
+	height: 100px;
+}
+
+/* Admin and Cart links */
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 30px; 
+}
+
+.nav-links a {
+    color: white;
+    margin-left: 20px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+	font-size: 20px;
+}
+
+.nav-links a i {
+    margin-right: 8px;
+}
+
+.nav-links a:hover {
+    color: #C3777C;
+}
+
+/* Logo Link Styles */
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+	width: 250px;
+    height: auto;
+    display: block;
+	filter: invert(1);
+}
+
+.logo:hover img {
+	transform: scale(1.05);
+	transition: transform 0.3s ease-in-out;
+}
+
+/* Main container */
+
+.main {
+    padding: 40px 50px;
+    max-width: 1200px;
+    margin: 40px auto;
+}
+
+h1 {
+    color: var(--primary-color); 
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+/* Cart Items Section */
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+tr {
+    display: table-row;
+    vertical-align: middle; 
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th, td {
+    padding: 10px;
+    vertical-align: middle;
+}
+
+th {
+    background-color: #f4f4f4;
+    color: #333;
+    font-weight: bold;
+}
+
+td img {
+    margin-right: 10px;
+    vertical-align: middle;
+    border-radius: 8px;
+}
+
+td:nth-child(2), /* Price column */
+td:nth-child(4) { /* Total column */
+    text-align: center;
+}
+
+.quantity {
+    text-align: center;
+}
+
+.quantity button {
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    height: 30px;
+    width: 30px; 
+}
+
+.quantity button:disabled {
+    background-color: #ddd;
+    cursor: not-allowed;
+}
+
+.quantity button:not(:disabled) {
+    background-color: var(--primary-color);
+}
+
+.quantity button:hover {
+    background-color: #1A242F; 
+}
+
+.quantity .quantity-value {
+    font-size: 16px;
+    min-width: 30px; 
+    line-height: 30px;
+    text-align: center;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.delete {
+    background-color: #E74C3C; 
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    height: 40px;
+    width: 90px;
+    font-family: 'Playfair Display', serif;
+    font-size: 15px;
+}
+
+.delete:hover {
+    background-color: #C0392B; 
+}
+
+
+/* Cart Total */
+.cart-total {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: right;
+    margin-top: 20px;
+    color: var(--primary-color); 
+}
+
+.cart-items a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Footer Container */
+
+.footer-container {
+    background-color: var(--primary-color); 
+    color: white;
+    padding: 40px 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+
+.footer-section {
+    flex: 1;
+    min-width: 200px;
+    margin: 20px;
+}
+
+/* Footer Titles */
+
+.footer-section h4 {
+    font-size: 18px;
+    margin-bottom: 15px;
+    color: #E1999E; 
+}
+
+/* Contact Info */
+
+.footer-section.contact-info p {
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.footer-section.contact-info a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer-section.contact-info a:hover {
+    color: var(--secondary-color);
+}
+
+/* Quick Links Section */
+
+.footer-section.quick-links ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-section.quick-links ul li {
+    margin-bottom: 10px;
+    font-size: 14px;
+    display: flex;
+    align-items: center; 
+}
+
+.footer-section.quick-links ul li a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-section.quick-links ul li a:hover {
+    color: var(--secondary-color);
+}
+
+.footer-section.quick-links ul li a i {
+    margin-right: 8px; 
+    font-size: 16px; 
+    transition: color 0.3s ease;
+}
+
+.footer-section.quick-links ul li a:hover i {
+    color: var(--secondary-color);
+}
+
+/* Social Media Icons */
+
+.footer-section.social-media a {
+    font-size: 20px;
+    color: white;
+    margin-right: 15px;
+    transition: color 0.3s ease;
+}
+
+.footer-section.social-media a:hover {
+    color: var(--secondary-color);
+}
+
+/* Bookstore Description */
+
+.footer-section.bookstore-description p {
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+/* Footer Bottom */
+
+.footer-bottom {
+    width: 100%;
+    text-align: center;
+    font-size: 12px;
+    margin-top: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    padding-top: 20px;
+    color: #ccc;
+}

@@ -1,9 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Playwrite+CL:wght@100..400&display=swap');
-
 :root {
-	--primary-color: white;
+	--primary-color: #2B2F52;
 	--dark-color: black;
-	--secondary-color: rgba(38,51,97,1);
+	--secondary-color: #C3777C;
 }
 
 * {
@@ -19,97 +17,308 @@ body {
 	line-height: 1.6;
 }
 
-a {
-	color: inherit;
-	text-decoration: none;
-}
+/* Navbar */
 
-.flex {
+.navbar {
 	display: flex;
-}
-
-.flex-col {
-	display: flex;
-	flex-direction: column;
-}
-
-.justify-around {
-	justify-content: space-around;
-}
-
-.justify-between {
 	justify-content: space-between;
-}
-
-.items-center {
 	align-items: center;
+	background: var(--primary-color);
+	padding: 10px 50px;
+	color: white;
+	height: 100px;
+	/* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); */
 }
 
-.gap-10 {
-	gap: 10px;
+/* Admin and Cart links */
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 30px; 
 }
 
-.gap-20 {
-	gap: 20px;
-}
-
-.p-5 {
-	padding: 5px;
-}
-
-.bg-dark {
-	background-color: var(--secondary-color);
-	color: var(--primary-color);
-}
-
-.gap-50 {
-	gap: 50px;
-}
-
-.p-50 {
-	padding: 50px;
-}
-
-.wrap {
-	flex-wrap: wrap;
-}
-
-.navbar a,
-.navbar h3 {
-	color: var(--primary-color);
+.nav-links a {
+    color: white;
+    margin-left: 20px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
 	font-size: 20px;
-	font-style: italic;
 }
 
-.navbar h3 i {
-	font-size: 28px;
-	padding-top: 10px;
+.nav-links a i {
+	margin-right: 15px;
+    transition: color 0.3s ease;
 }
 
-.logo h3 {
-	font-family: 'Playwrite CU', cursive;
-	font-optical-sizing: auto;
-	font-size: 28px;
+.nav-links a:hover {
+    color: #C3777C;
 }
+
+/* Logo Link Styles */
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+	width: 250px;
+    height: auto;
+    display: block;
+	filter: invert(1);
+}
+
+.logo:hover img {
+	transform: scale(1.05);
+	transition: transform 0.3s ease-in-out;
+}
+
+/* Hero section */ 
+
+.hero-section {
+	position: relative;
+    padding: 60px 80px;
+	height: 550px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+	overflow: hidden;
+	background-color: #2B2F52;
+}
+
+.bg-image {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-image: url(../images/library2.svg);
+	
+
+	/* Add the blur effect */
+	filter: blur(5px);
+	-webkit-filter: blur(5px);
+
+	height: 100%;
+
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+    z-index: 1; /* Ensure the background is behind the content */
+}
+
+.bg-image::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(43, 47, 82, 0.7); /* color with opacity */
+    z-index: 2; /* Place the overlay above the background image */
+}
+
+.hero-content, .hero-image {
+	position: relative;
+	z-index: 3; /* Bring content above the background and overlay */
+}
+
+.hero-content {
+	max-width: 50%;
+}
+
+.hero-content h2 {
+	font-size: 2.9em;
+	color: white;
+	text-shadow: 0 0 10px #2B2F52, 0 0 20px #2B2F52, 0 0 30px #2B2F52;
+	animation: flicker 1.5s alternate 5;
+}
+
+@keyframes flicker {
+	0% {
+	  opacity: 1;
+	}
+	50% {
+	  opacity: 0.4;
+	}
+	100% {
+	  opacity: 1;
+	}
+  }
+
+.hero-content h4 {
+    font-size: 20px;
+    margin-bottom: 30px;
+	font-family: 'Playfair Display', serif;
+}
+
+.hero-image {
+	width: 1200px;
+}
+
+.hero-image img {
+	width: 130%;
+	height: auto;
+	margin-right: 40px;
+}
+
+/* Main */
+
+.main {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 50px;
+	padding: 50px;
+	justify-content: space-between;
+	overflow: hidden;
+}
+
+/* Card */
 
 .product-card {
-	background-image: linear-gradient(to top, #dfe9f3 0%, white 100%);
+	background-color: white;
 	width: 200px;
 	text-align: center;
 	padding: 15px 5px;
-	border: 2px solid var(--secondary-color);
+	border: 2px solid black;
 	border-radius: 10px;
+
 }
 
-.main {
-	background-image: linear-gradient(to top, #dfe9f3 0%, white 100%);
+.product-card {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-between;
 }
 
-.add-to-cart {
-	font-size: 12px;
-	border-radius: 12px;
-	padding: 6px;
-	border: 1px solid black;
-	background-image: linear-gradient(to top, #f3e7e9 0%, #e3eeff 99%, #e3eeff 100%);
-	font-weight: bolder;
+.product-card button {
+    padding: 10px 20px;
+    background-color: #C3777C;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+	margin-top: 5px;
+}
+
+.product-card button:hover {
+    background-color: #2B2F52;
+}
+
+.product-card img {
+	width: 150px;
+	height: 230px;
+	margin-bottom: 5px;
+}
+
+/* Footer Container */
+
+.footer-container {
+    background-color: var(--primary-color); 
+    color: white;
+    padding: 40px 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.footer-section {
+    flex: 1;
+    min-width: 200px;
+    margin: 20px;
+}
+
+/* Footer Titles */
+
+.footer-section h4 {
+    font-size: 18px;
+    margin-bottom: 15px;
+    color: #E1999E; 
+}
+
+/* Contact Info */
+
+.footer-section.contact-info p {
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.footer-section.contact-info a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer-section.contact-info a:hover {
+    color: var(--secondary-color);
+}
+
+/* Quick Links Section */
+
+.footer-section.quick-links ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-section.quick-links ul li {
+    margin-bottom: 10px;
+    font-size: 14px;
+    display: flex;
+    align-items: center; 
+}
+
+.footer-section.quick-links ul li a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-section.quick-links ul li a:hover {
+    color: var(--secondary-color);
+}
+
+.footer-section.quick-links ul li a i {
+    margin-right: 8px; 
+    font-size: 16px; 
+    transition: color 0.3s ease;
+}
+
+.footer-section.quick-links ul li a:hover i {
+    color: var(--secondary-color);
+}
+
+/* Social Media Icons */
+
+.footer-section.social-media a {
+    font-size: 20px;
+    color: white;
+    margin-right: 15px;
+    transition: color 0.3s ease;
+}
+
+.footer-section.social-media a:hover {
+    color: var(--secondary-color);
+}
+
+/* Bookstore Description */
+
+.footer-section.bookstore-description p {
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+/* Footer Bottom */
+
+.footer-bottom {
+    width: 100%;
+    text-align: center;
+    font-size: 12px;
+    margin-top: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    padding-top: 20px;
+    color: #ccc;
 }
