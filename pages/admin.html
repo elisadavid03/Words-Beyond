@@ -16,21 +16,22 @@
 	</head>
 	<body>
 		<div class="container">
-			<div class="navbar flex justify-around items-center bg-dark p-5">
+			<div class="navbar">
 				<div class="logo">
-					<h3>
-						<a href="../index.html">Words Beyond</a>
-					</h3>
+                    <a href="../index.html">
+                        <img src="../images/Words beyond-2.svg" alt="Words Beyond Logo" />
+                    </a>
+            </div>
+				<div class="nav-links">
+					<a href="admin.html"><i class="fa-solid fa-user"></i>Admin</a>
+					<a href="cart.html"><i class="fa-solid fa-cart-shopping"></i>Cart</a>
 				</div>
-				<div class="nav-links flex gap-10">
-					<a href="admin.html">Admin</a>
-					<a href="cart.html">Cart</a>
-				</div>
+            </div>
                 <div class="main">
                     <h1>Admin Page</h1>
                     <form id="product-form">
                         <div>
-                            <label for="name">Product name</label>
+                            <label for="name">Product Name</label>
                             <input type="text" id="name" />
                         </div>
                         <div>
@@ -38,10 +39,14 @@
                             <input type="number" id="price" />
                         </div>
                         <div>
+                            <label for="stock">Stock</label>
+                            <input type="number" id="stock" />
+                        </div>
+                        <div>
                             <label for="image-url">Image URL</label>
                             <input type="text" id="image-url" />
                         </div>
-                        <div>
+                        <div class="full-width">
                             <label for="details">Details</label>
                             <input type="text" id="details" />
                         </div>
@@ -52,6 +57,7 @@
                             <tr>
                                 <th>Name</th>
                                 <th>Price</th>
+                                <th>Stock</th>
                                 <th>Image</th>
                                 <th>Edit</th>
                                 <th>Delete</th>
@@ -60,7 +66,39 @@
                         <tbody></tbody>
                     </table>
                 </div>
-		</div>
+
+                <div class="footer-container">
+
+                    <div class="footer-section contact-info">
+                        <h4>Contact Me</h4>
+                        <p>Email: <a href="mailto:elisadavid123@icloud.com">elisadavid123@icloud.com</a></p>
+                    </div>
+    
+                    <div class="footer-section quick-links">
+                        <h4>Quick Links</h4>
+                        <ul>
+                            <li><a href="../index.html"><i class="fa-solid fa-house"></i>Home</a></li>
+                            <li><a href="cart.html"><i class="fa-solid fa-cart-shopping"></i>Cart</a></li>
+                        </ul>
+                    </div>
+    
+                    <div class="footer-section social-media">
+                        <h4>Follow Me</h4>
+                        <a href="https://www.instagram.com/elisadavid_/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/elisa-david2003/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+    
+                    <div class="footer-section bookstore-description">
+                        <h4>About Words Beyond</h4>
+                        <p>At Words Beyond, the transformative power of books is at the heart of everything. The mission is to bring readers closer to stories that inspire, educate, and entertain. From timeless classics to modern bestsellers, each book is handpicked to meet high standards of literary excellence.</p>
+                    </div>
+    
+                    <div class="footer-bottom">
+                        <p>&copy; 2024 Words Beyond | All Rights Reserved</p>
+                    </div>
+    
+                </div>
+
         <script type="module" src="../js/admin.js"></script>
 	</body>
 </html>

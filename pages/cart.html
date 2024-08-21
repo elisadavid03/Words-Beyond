@@ -4,7 +4,7 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<link rel="shortcut icon" href="images/favico.png" type="image/png" />
-		<link rel="stylesheet" href="../css/style.css" />
+		<link rel="stylesheet" href="../css/cart.css" />
 		<link
 			rel="stylesheet"
 			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
@@ -16,23 +16,70 @@
 	</head>
 	<body>
 		<div class="container">
-			<div class="navbar flex justify-around items-center bg-dark p-5">
+			<div class="navbar">
 				<div class="logo">
-					<h3>
-						<a href="../index.html">Words Beyond</a>
-					</h3>
-				</div>
-				<div class="nav-links flex gap-10">
-					<a href="admin.html">Admin</a>
-					<a href="cart.html">Cart</a>
+					<a href="../index.html">
+						<img src="../images/Words beyond-2.svg" alt="Words Beyond Logo" />
+					</a>
+			</div>
+				<div class="nav-links">
+					<a href="admin.html"><i class="fa-solid fa-user"></i>Admin</a>
+					<a href="cart.html"><i class="fa-solid fa-cart-shopping"></i>Cart</a>
 				</div>
 			</div>
 			<div class="main">
-				<h1>Cart</h1>
-				<div class ="cart-items"></div>
-				<div class ="cart-total"></div>
+				<h1>Your Cart</h1>
+				<table>
+					<thead>
+					<tr>
+						<th>Item Name</th>
+						<th>Item Price</th>
+						<th>Quantity</th> 
+						<th>Total</th> 
+						<th>Actions</th>
+					</tr>
+				</thead>
+
+				<tbody class="cart-items">
+                    <!-- Cart items will be dynamically inserted here -->
+                </tbody>
+			</table>
+				<div class="cart-total">
+					<!-- Total amount will be displayed here -->
+				</div>
 			</div>
-			<div class="footer"></div>
+			<div class="footer-container">
+
+				<div class="footer-section contact-info">
+					<h4>Contact Me</h4>
+					<p>Email: <a href="mailto:elisadavid123@icloud.com">elisadavid123@icloud.com</a></p>
+				</div>
+
+				<div class="footer-section quick-links">
+					<h4>Quick Links</h4>
+					<ul>
+						<li><a href="../index.html"><i class="fa-solid fa-house"></i>Home</a></li>
+						<li><a href="admin.html"><i class="fa-solid fa-user"></i>Admin</a></li>
+					</ul>
+				</div>
+
+				<div class="footer-section social-media">
+					<h4>Follow Me</h4>
+					<a href="https://www.instagram.com/elisadavid_/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+					<a href="https://www.linkedin.com/in/elisa-david2003/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+				</div>
+
+				<div class="footer-section bookstore-description">
+					<h4>About Words Beyond</h4>
+					<p>At Words Beyond, the transformative power of books is at the heart of everything. The mission is to bring readers closer to stories that inspire, educate, and entertain. From timeless classics to modern bestsellers, each book is handpicked to meet high standards of literary excellence.</p>
+				</div>
+
+				<div class="footer-bottom">
+					<p>&copy; 2024 Words Beyond | All Rights Reserved</p>
+				</div>
+
+			</div>
+
 		</div>
         <script type="module" src="../js/cart.js"></script>
 	</body>
