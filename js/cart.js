@@ -26,7 +26,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
 			row.innerHTML = `
 			<td>
-			<img src="${product.imageUrl}" width="60px" />
+			<a href="../pages/details.html?id=${id}">
+			   <img src="${product.imageUrl}" width="90px" />
+			</a>
 			${product.name}
 			</td>
 			 <td>${product.price} €</td>
