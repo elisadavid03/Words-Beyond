@@ -6,23 +6,75 @@
 		<link rel="shortcut icon" href="images/favico.png" type="image/png" /> 
 		<link rel="stylesheet" href="css/style.css" />
 		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+			integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		/>
 		<title>Words Beyond</title>
 	</head>
 	<body>
 		<div class="container">
-			<div class="navbar flex justify-around items-center bg-dark p-5">
+			<div class="navbar">
 				<div class="logo">
-					<h3>
-						<a href="index.html">Words Beyond</a>
-					</h3>
+						<a href="index.html">
+							<img src="images/Words beyond-2.svg" alt="Words Beyond Logo" />
+						</a>
 				</div>
-				<div class="nav-links flex gap-10">
-					<a href="pages/admin.html">Admin</a>
-					<a href="pages/cart.html">Cart</a>
+				<div class="nav-links">
+					<a href="pages/admin.html">
+						<i class="fa-solid fa-user"></i>
+						Admin</a>
+					<a href="pages/cart.html" class="cart-link">
+						<i class="fa-solid fa-cart-shopping"></i>
+						Cart </a>
 				</div>
 			</div>
-			<div class="main main flex wrap gap-50 p-50 justify-between"></div>
-			<div class="footer"></div>
+			<div class="hero-section">
+				<div class="hero-content">
+					<h2>"Beyond Words, Into Worlds"</h2>
+					<h4>At Words Beyond, every book is a gateway to unexplored worlds and untold stories. Within this carefully curated collection, you'll find timeless classics, modern masterpieces, and hidden gems that ignite the imagination and nourish the soul. Whether you're seeking the wisdom of historical epics, the thrill of contemporary novels, or the beauty of poetic prose, Words Beyond offers a sanctuary for readers who crave more than just words on a page. Here, every book is a journey, and every journey begins with a single page. Discover your next adventure, and let your story unfold.</h4>
+				</div>
+				<div class="hero-image">
+					<img src="images/books_herosection.svg" alt="Books Hero Section" />
+				</div>
+				<div class="bg-image"></div>
+			</div>
+			<div class="main"></div>
+
+			<div class="footer-container">
+
+				<div class="footer-section contact-info">
+					<h4>Contact Me</h4>
+					<p>Email: <a href="mailto:elisadavid123@icloud.com">elisadavid123@icloud.com</a></p>
+				</div>
+
+				<div class="footer-section quick-links">
+					<h4>Quick Links</h4>
+					<ul>
+						<li><a href="pages/admin.html"><i class="fa-solid fa-user"></i>Admin</a></li>
+						<li><a href="pages/cart.html"><i class="fa-solid fa-cart-shopping"></i>Cart</a></li>
+					</ul>
+				</div>
+
+				<div class="footer-section social-media">
+					<h4>Follow Me</h4>
+					<a href="https://www.instagram.com/elisadavid_/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+					<a href="https://www.linkedin.com/in/elisa-david2003/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+				</div>
+
+				<div class="footer-section bookstore-description">
+					<h4>About Words Beyond</h4>
+					<p>At Words Beyond, the transformative power of books is at the heart of everything. The mission is to bring readers closer to stories that inspire, educate, and entertain. From timeless classics to modern bestsellers, each book is handpicked to meet high standards of literary excellence.</p>
+				</div>
+
+				<div class="footer-bottom">
+					<p>&copy; 2024 Words Beyond | All Rights Reserved</p>
+				</div>
+
+			</div>
 		</div>
         <script type="module" src="index.js"></script>
 	</body>
