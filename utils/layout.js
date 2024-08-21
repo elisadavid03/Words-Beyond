@@ -1,7 +1,7 @@
 export function mapProductToCard(product) {
    console.log('Mapping product to card:', product); // Log product mapping
    return `
-       <div class="product-card flex-col gap-20 items-center justify-between">
+       <div class="product-card">
            <h3 class="card-title">${product.name}</h3>
            <a href="pages/details.html?id=${product.id}">
               
@@ -24,6 +24,7 @@ export function mapProductToAdminTableRow(product) {
             <tr>
                <td>${product.name}</td>
                <td>${product.price}</td>
+               <td>${product.stock}</td>
                <td>
                   <a href="details.html?id=${product.id}">
                      <img src="${product.imageUrl}" width="60px" />

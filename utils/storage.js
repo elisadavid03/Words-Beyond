@@ -34,7 +34,7 @@ export function addToCart(product, quantity = 1) {
     return "success";
 }
 
-// Function to check product details from the API or a mock source
+// Function to check product details from the API 
 export async function getProductDetails(productId) {
     const response = await fetch(`https://668d7a51099db4c579f31799.mockapi.io/books/${productId}`);
     if (!response.ok) throw new Error('Failed to fetch product details');
