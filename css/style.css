@@ -20,6 +20,7 @@ body {
 /* Navbar */
 
 .navbar {
+    position: sticky; top: 0;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
@@ -185,7 +186,6 @@ body {
 	padding: 15px 5px;
 	border: 2px solid black;
 	border-radius: 10px;
-
 }
 
 .product-card {
@@ -214,6 +214,7 @@ body {
 	width: 150px;
 	height: 230px;
 	margin-bottom: 5px;
+    border-radius: 8px;
 }
 
 /* Footer Container */
