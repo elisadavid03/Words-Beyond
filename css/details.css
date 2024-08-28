@@ -20,6 +20,7 @@ body {
 /* Navbar */
 
 .navbar {
+    position: sticky; top: 0;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
@@ -117,9 +118,10 @@ body {
 .details {
 	flex: 2;
 	text-align: center;
-	font-size: 16px;
-    color: #333;
-    line-height: 1.5;
+	font-size: 15px;
+    color: var(--dark-color);
+    line-height: 1.8;
+    margin-top: 10px;
 	margin-bottom: 10px;
     margin-left: 20px;
     margin-right: 20px;
@@ -171,7 +173,7 @@ body {
 .product-details .card-price {
     font-size: 28px;
     font-weight: bold;
-    color: var(--secondary-color);
+    color: #E74C3C;
 	gap: 20px;
 	display: flex;
 	justify-content: center;
@@ -185,7 +187,7 @@ body {
 
 .product-details .add-to-cart {
     padding: 12px 24px;
-    background-color: var(--secondary-color);
+    background-color: var(--primary-color);
     color: white;
     border: none;
     border-radius: 5px;
@@ -195,7 +197,7 @@ body {
 }
 
 .product-details .add-to-cart:hover {
-    background-color: var(--primary-color);
+    background-color: var(--secondary-color);
 }
 
 .product-details {
@@ -233,7 +235,7 @@ body {
 
 .notification {
     margin-top: 10px;
-    color: var(--primary-color);
+    color: var(--dark-color);
     font-size: 16px;
 }
 
